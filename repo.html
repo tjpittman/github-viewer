@@ -1,0 +1,9 @@
+<div>
+    <h2>{{reponame}}</h2>
+    <h3>Issues: {{issues}}</h3>
+    <ul ng-repeat="contributor in contributors">
+        <li><img class="image-size" ng-src="{{contributor.avatar_url}}" title="{{contributor.login}}"/>{{contributor.login}}</li>
+    </ul>
+</div> 
+<a href="#\main">Home</a>
+<a href="#/user/{{username}}">Return To {{username}}</a>
